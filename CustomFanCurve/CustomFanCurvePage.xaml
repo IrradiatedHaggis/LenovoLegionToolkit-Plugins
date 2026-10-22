@@ -117,7 +117,8 @@
                         </wpfui:Button.Style>
                     </wpfui:Button>
 
-                    <wpfui:Button Appearance="Secondary" Height="36" Width="36" Padding="0" Margin="8,0,0,0"
+                    <wpfui:Button x:Name="_configurationButton" Appearance="Secondary" Height="36" Width="36" Padding="0" Margin="8,0,0,0"
+                            AutomationProperties.Name="{x:Static res:Resource.ConfigurationTitle}"
                             Click="Configuration_Click" Icon="Copy24" ToolTip="{x:Static res:Resource.ConfigurationTitle}"/>
                     <wpfui:Button x:Name="_settingsButton" Appearance="Secondary" Height="36" VerticalAlignment="Center"
                             Margin="8,0,0,0" Click="Settings_Click"

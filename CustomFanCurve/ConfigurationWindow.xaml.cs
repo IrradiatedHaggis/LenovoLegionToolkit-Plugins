@@ -5,11 +5,12 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using Microsoft.Win32;
+using Wpf.Ui.Controls;
 using LenovoLegionToolkit.Plugin.CustomFanCurve.Resources;
 
 namespace LenovoLegionToolkit.Plugin.CustomFanCurve;
 
-public partial class ConfigurationWindow : Window
+public partial class ConfigurationWindow : UiWindow
 {
     private readonly CustomFanCurveConfigManager _config;
     private readonly IReadOnlyList<CustomFanCurveControlViewModel> _fans;
@@ -108,6 +109,8 @@ public partial class ConfigurationWindow : Window
 
     private bool Confirm(string message) => System.Windows.MessageBox.Show(this, message, Resource.ConfigurationTitle,
         MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes;
+
+    private void Close_Click(object sender, RoutedEventArgs e) => Close();
 
     private void Run(Action action)
     {

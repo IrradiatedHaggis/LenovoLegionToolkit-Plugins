@@ -584,4 +584,20 @@
   <data name="BackupSaved" xml:space="preserve"><value>备份导出成功。</value></data>
   <data name="ConfigurationFailed" xml:space="preserve"><value>操作失败。</value></data>
   <data name="BackupTooLarge" xml:space="preserve"><value>备份超过 5 MB 限制。</value></data>
+  <data name="ConfigurationCopyTab" xml:space="preserve"><value>复制</value></data>
+  <data name="ConfigurationBackupTab" xml:space="preserve"><value>备份</value></data>
+  <data name="ConfigurationDefaultsTab" xml:space="preserve"><value>默认设置</value></data>
+  <data name="ConfigurationExportDescription" xml:space="preserve"><value>将所有曲线和高级设置保存为 JSON 文件。</value></data>
+  <data name="ConfigurationImportDescription" xml:space="preserve"><value>载入备份或原始设置文件。</value></data>
+  <data name="ConfigurationRecoveryTitle" xml:space="preserve"><value>自动备份</value></data>
+  <data name="ConfigurationRecoveryDescription" xml:space="preserve"><value>恢复复制、还原或重置前自动保存的设置。</value></data>
+  <data name="ConfigurationResetFanDescription" xml:space="preserve"><value>恢复此风扇的默认曲线和传感器来源。</value></data>
+  <data name="ConfigurationResetAllDescription" xml:space="preserve"><value>恢复插件默认设置，关闭自定义控制和全速模式，并保留硬件校准。</value></data>
+  <data name="ConfigurationClose" xml:space="preserve"><value>关闭</value></data>
+  <data name="ConfigurationSelectedFan" xml:space="preserve"><value>所选风扇</value></data>
+  <data name="ConfigurationExportTitle" xml:space="preserve"><value>导出备份</value></data>
+  <data name="ConfigurationRestoreTitle" xml:space="preserve"><value>恢复备份</value></data>
+  <data name="ConfigurationExportAction" xml:space="preserve"><value>导出…</value></data>
+  <data name="ConfigurationRestoreAction" xml:space="preserve"><value>恢复…</value></data>
+  <data name="ConfigurationHint" xml:space="preserve"><value>更改立即生效。替换设置前会自动备份。</value></data>
 </root>

@@ -8,6 +8,7 @@
     <NoWarn>$(NoWarn);CA1416</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="WPF-UI" Version="2.1.0" />
     <ProjectReference Include="..\..\CustomFanCurve\CustomFanCurve.csproj" />
     <ProjectReference Include="$(LLT_SOURCE)\LenovoLegionToolkit.Lib\LenovoLegionToolkit.Lib.csproj" />
   </ItemGroup>

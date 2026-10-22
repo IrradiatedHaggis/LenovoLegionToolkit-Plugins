@@ -584,4 +584,20 @@ With spin-up boost enabled, the system briefly runs the fan at a higher RPM befo
   <data name="BackupSaved" xml:space="preserve"><value>Backup exported successfully.</value></data>
   <data name="ConfigurationFailed" xml:space="preserve"><value>The operation failed.</value></data>
   <data name="BackupTooLarge" xml:space="preserve"><value>The backup exceeds the 5 MB limit.</value></data>
+  <data name="ConfigurationCopyTab" xml:space="preserve"><value>Copy</value></data>
+  <data name="ConfigurationBackupTab" xml:space="preserve"><value>Backups</value></data>
+  <data name="ConfigurationDefaultsTab" xml:space="preserve"><value>Defaults</value></data>
+  <data name="ConfigurationExportDescription" xml:space="preserve"><value>Save all curves and advanced settings to a JSON file.</value></data>
+  <data name="ConfigurationImportDescription" xml:space="preserve"><value>Load a backup or an existing settings file.</value></data>
+  <data name="ConfigurationRecoveryTitle" xml:space="preserve"><value>Automatic backups</value></data>
+  <data name="ConfigurationRecoveryDescription" xml:space="preserve"><value>Recover settings saved before a copy, restore or reset.</value></data>
+  <data name="ConfigurationResetFanDescription" xml:space="preserve"><value>Restore this fan's default curve and sensor source.</value></data>
+  <data name="ConfigurationResetAllDescription" xml:space="preserve"><value>Restore plugin defaults and disable custom control and full speed. Hardware calibration is preserved.</value></data>
+  <data name="ConfigurationClose" xml:space="preserve"><value>Close</value></data>
+  <data name="ConfigurationSelectedFan" xml:space="preserve"><value>Selected fan</value></data>
+  <data name="ConfigurationExportTitle" xml:space="preserve"><value>Export backup</value></data>
+  <data name="ConfigurationRestoreTitle" xml:space="preserve"><value>Restore backup</value></data>
+  <data name="ConfigurationExportAction" xml:space="preserve"><value>Export…</value></data>
+  <data name="ConfigurationRestoreAction" xml:space="preserve"><value>Restore…</value></data>
+  <data name="ConfigurationHint" xml:space="preserve"><value>Changes apply immediately. Replaced settings are backed up automatically.</value></data>
 </root>
