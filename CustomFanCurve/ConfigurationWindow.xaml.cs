@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using Microsoft.Win32;
 using Wpf.Ui.Controls;
+using Wpf.Ui.Common;
 using LenovoLegionToolkit.Plugin.CustomFanCurve.Resources;
 
 namespace LenovoLegionToolkit.Plugin.CustomFanCurve;
@@ -107,8 +108,36 @@ public partial class ConfigurationWindow : UiWindow
         Status.Text = Resource.ConfigurationSaved;
     });
 
-    private bool Confirm(string message) => System.Windows.MessageBox.Show(this, message, Resource.ConfigurationTitle,
-        MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes;
+    private bool Confirm(string message)
+    {
+        var confirmed = false;
+        var dialog = new Wpf.Ui.Controls.MessageBox
+        {
+            Owner = this,
+            Title = Resource.ConfigurationTitle,
+            Content = new TextBlock { Text = message, TextWrapping = TextWrapping.Wrap },
+            ButtonLeftName = Resource.ConfigurationConfirm,
+            ButtonRightName = Resource.Cancel,
+            ButtonLeftAppearance = ControlAppearance.Primary,
+            ShowInTaskbar = false,
+            Topmost = false,
+            WindowStartupLocation = WindowStartupLocation.CenterOwner,
+            SizeToContent = SizeToContent.Height,
+            MinHeight = 160,
+            MaxHeight = double.PositiveInfinity,
+            ResizeMode = ResizeMode.NoResize
+        };
+        dialog.ButtonLeftClick += (_, _) => { confirmed = true; dialog.Close(); };
+        dialog.ButtonRightClick += (_, _) => dialog.Close();
+        dialog.PreviewKeyDown += (_, e) =>
+        {
+            if (e.Key != System.Windows.Input.Key.Escape) return;
+            e.Handled = true;
+            dialog.Close();
+        };
+        dialog.ShowDialog();
+        return confirmed;
+    }
 
     private void Close_Click(object sender, RoutedEventArgs e) => Close();
 

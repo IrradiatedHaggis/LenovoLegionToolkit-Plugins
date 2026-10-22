@@ -600,4 +600,5 @@ With spin-up boost enabled, the system briefly runs the fan at a higher RPM befo
   <data name="ConfigurationExportAction" xml:space="preserve"><value>Export…</value></data>
   <data name="ConfigurationRestoreAction" xml:space="preserve"><value>Restore…</value></data>
   <data name="ConfigurationHint" xml:space="preserve"><value>Changes apply immediately. Replaced settings are backed up automatically.</value></data>
+  <data name="ConfigurationConfirm" xml:space="preserve"><value>Confirm</value></data>
 </root>

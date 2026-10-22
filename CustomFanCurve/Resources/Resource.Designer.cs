@@ -1412,5 +1412,6 @@ namespace LenovoLegionToolkit.Plugin.CustomFanCurve.Resources {
         public static string ConfigurationExportAction => ResourceManager.GetString("ConfigurationExportAction", resourceCulture)!;
         public static string ConfigurationRestoreAction => ResourceManager.GetString("ConfigurationRestoreAction", resourceCulture)!;
         public static string ConfigurationHint => ResourceManager.GetString("ConfigurationHint", resourceCulture)!;
+        public static string ConfigurationConfirm => ResourceManager.GetString("ConfigurationConfirm", resourceCulture)!;
     }
 }

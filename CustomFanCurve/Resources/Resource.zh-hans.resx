@@ -600,4 +600,5 @@
   <data name="ConfigurationExportAction" xml:space="preserve"><value>导出…</value></data>
   <data name="ConfigurationRestoreAction" xml:space="preserve"><value>恢复…</value></data>
   <data name="ConfigurationHint" xml:space="preserve"><value>更改立即生效。替换设置前会自动备份。</value></data>
+  <data name="ConfigurationConfirm" xml:space="preserve"><value>确认</value></data>
 </root>
